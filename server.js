@@ -26,7 +26,7 @@ var allowedID=makeid();
 
 app.get('/stuff.html',function(req,res){
 	if(req.cookies["code"]==allowedID){	
-		res.sendFile("stuff.html")
+		res.sendfile("stuff.html")
 	}
 });
 app.post('/login', function(req,res){
